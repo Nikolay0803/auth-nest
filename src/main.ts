@@ -9,7 +9,13 @@ async function bootstrap() {
     whitelist: true,
     forbidNonWhitelisted: true,
     transform: true
-}))
-  await app.listen(8000);
+  }))
+  //  app.enableCors({
+  //    origin: "http://localhost:3000", // Дозволити запити з цього домену
+  //    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  //    allowedHeaders: "Content-Type, Authorization",
+  //  });
+  // await app.listen(8000);
+  await app.listen(3000);
 }
 bootstrap();
