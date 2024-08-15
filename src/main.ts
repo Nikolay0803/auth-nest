@@ -10,11 +10,12 @@ async function bootstrap() {
     forbidNonWhitelisted: true,
     transform: true
   }))
-  //  app.enableCors({
-  //    origin: "http://localhost:3000", // Дозволити запити з цього домену
-  //    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  //    allowedHeaders: "Content-Type, Authorization",
-  //  });
+   app.enableCors({
+     //  origin: "http://localhost:3000",
+     origin: "https://auth-next-xi.vercel.app",
+     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+     allowedHeaders: "Content-Type, Authorization",
+   });
   // await app.listen(8000);
   await app.listen(3000, "0.0.0.0");
 }
