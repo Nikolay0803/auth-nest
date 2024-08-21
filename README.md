@@ -47,21 +47,33 @@
 
 - **Running the Frontend**:
 ```bash
-$ npm clone 
+# Clone
+$ npm clone <repositorie>
 ```
   - add your .env
   ```bash
+#Install
 $ npm install
 ``` 
 ```bash
+#Start
 $ npm run dev
 ```
  
 - **Running the Frontend**:
-  - git clone <repository-url>
+```bash
+# Clone
+$ npm clone <repositorie>
+```
   - add your .env
-  - npm i 
-  - npm run start:dev
+  ```bash
+#Install
+$ npm install
+``` 
+```bash
+#Start
+$ npm run start:dev
+```
 
 
 
