@@ -13,8 +13,10 @@ async function bootstrap() {
       transform: true,
     })
   );
+  const cors = process.env.PORT_FRONT
+
   app.enableCors({
-    origin: process.env.PORT_FRONT,
+    origin: cors,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: "Content-Type, Authorization",
   });
