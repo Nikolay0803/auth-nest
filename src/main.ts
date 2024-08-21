@@ -14,8 +14,7 @@ async function bootstrap() {
     })
   );
   app.enableCors({
-    // origin: "http://localhost:3000",
-     origin: "https://auth-next-xi.vercel.app",
+    origin: process.env.PORT_FRONT,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: "Content-Type, Authorization",
   });
@@ -29,7 +28,6 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup("doc", app, document);
-  // await app.listen(8000);
-  await app.listen(3000, "0.0.0.0");
+  await app.listen(process.env.PORT, "0.0.0.0");
 }
 bootstrap();
