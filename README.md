@@ -46,11 +46,16 @@
 
 
 - **Running the Frontend**:
-  ```bash
-$ git clone <url_repo>
+```bash
+$ npm clone 
+```
   - add your .env
-  - npm i 
-  - npm run dev
+  ```bash
+$ npm install
+``` 
+```bash
+$ npm run dev
+```
  
 - **Running the Frontend**:
   - git clone <repository-url>
