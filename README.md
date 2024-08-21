@@ -48,7 +48,7 @@
 - **Running the Frontend**:
 ```bash
 # Clone
-$ npm clone <repositorie>
+$ git clone <repositorie>
 ```
   - add your .env
   ```bash
@@ -63,7 +63,7 @@ $ npm run dev
 - **Running the Frontend**:
 ```bash
 # Clone
-$ npm clone <repositorie>
+$ git clone <repositorie>
 ```
   - add your .env
   ```bash
