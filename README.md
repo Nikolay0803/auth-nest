@@ -1,32 +1,67 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Learn Lingo
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Learn Lingo** is an interactive language learning application that integrates user registration, authentication, and content access features. Developed with a Nest.js backend and a Next.js frontend, it offers a robust and user-friendly interface for language learning.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Technology Stack
 
-## Description
+### Backend
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- **Nest.js**: A scalable and maintainable backend framework with a modular architecture.
+- **JWT (JSON Web Tokens)**: Provides secure authentication with access and refresh tokens.
+- **Prisma ORM**: Simplifies database interactions, including data modeling and migrations.
+- **Swagger**: Automatically generates API documentation, making API testing and integration more straightforward.
 
-## Installation
+### Frontend
+
+- **Next.js**: Framework for server-side rendering (SSR) and static site generation (SSG) to ensure optimal performance and SEO.
+- **Next-auth**: Manages user authentication and session management, supporting multiple authentication providers and tokens.
+- **React**: A library for building user interfaces with a component-based approach.
+- **Tailwind CSS**: A utility-first CSS framework for creating responsive and visually appealing designs.
+- **React-toastify**: Displays real-time notifications for user interactions such as registration confirmations and error messages.
+
+## Key Features
+
+- **User Registration and Authentication**:
+  - Allows users to create accounts and log in using JWT tokens.
+  - Ensures secure password storage and session management.
+![User Registration and Authentication](https://github.com/Nikolay0803/auth-next/blob/master/photos-app/reg-lin.png)
+![User Registration and Authentication](https://github.com/Nikolay0803/auth-next/blob/master/photos-app/log-lin.png)
+  
+
+- **Home Page**:
+  - Available to all users.
+  - Provides main content and information about the application.
+  ![Home Page](https://github.com/Nikolay0803/auth-next/blob/master/photos-app/home-lin.png)
+
+- **Teachers Page**:
+  - Restricted to authenticated users.
+  - Features specialized information and resources accessible only after login.
+  ![Teachers Page](https://github.com/Nikolay0803/auth-next/blob/master/photos-app/teach-lin.png)
+
+- **API Documentation**:
+  - Swagger facilitates automatic API documentation generation for easy verification and testing.
+  ![Teachers Page](https://github.com/Nikolay0803/auth-next/blob/master/photos-app/swag-lin.png)
+
+## Setup and Running
+
+
+- **Running the Frontend**:
+  ```bash
+$ git clone <url_repo>
+  - add your .env
+  - npm i 
+  - npm run dev
+ 
+- **Running the Frontend**:
+  - git clone <repository-url>
+  - add your .env
+  - npm i 
+  - npm run start:dev
+
+
+
+
+
 
 ```bash
 $ npm install
