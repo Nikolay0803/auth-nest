@@ -22,10 +22,10 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle("Auth-Nest")
+    .setTitle("Learn Lingo")
     .setDescription("API documentation for the auth-nest")
     .setVersion("1.0")
-    .addTag("endpoints")
+    .addTag("Main")
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
